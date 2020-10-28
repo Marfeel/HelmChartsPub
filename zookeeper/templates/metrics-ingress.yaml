@@ -1,9 +1,9 @@
 {{- if .Values.metrics.ingress.enabled }}
-
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: {{ template "zookeeper.fullname" . }}-metrics
+  namespace: {{ template "zookeeper.namespace" . }}
   {{- if or .Values.metrics.ingress.annotations .Values.commonAnnotations }}
   annotations:
     {{- if .Values.metrics.ingress.annotations }}

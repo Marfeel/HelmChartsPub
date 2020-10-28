@@ -5,7 +5,30 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T11:58:21.785364033+01:00"
+    created: "2020-10-28T12:06:19.041732076+01:00"
+    description: A centralized service for maintaining configuration information,
+      naming, providing distributed synchronization, and providing group services
+      for distributed applications.
+    digest: 4d4a8c92b9eaaabe2948ac6509c2db17b159650a530c7e6b570dd19a5f1e0e22
+    home: https://github.com/bitnami/charts/tree/master/bitnami/zookeeper
+    icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-110x117.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/bitnami-docker-zookeeper
+    - https://zookeeper.apache.org/
+    urls:
+    - zookeeper-5.25.0.tgz
+    version: 5.25.0
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.6.2
+    created: "2020-10-28T12:06:19.040132522+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -28,7 +51,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T11:58:21.783859987+01:00"
+    created: "2020-10-28T12:06:19.038247048+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -47,4 +70,4 @@ entries:
     urls:
     - zookeeper-5.23.0.tgz
     version: 5.23.0
-generated: "2020-10-28T11:58:21.782324478+01:00"
+generated: "2020-10-28T12:06:19.036680922+01:00"
