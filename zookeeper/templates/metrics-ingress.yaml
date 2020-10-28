@@ -1,0 +1,28 @@
+{{- if .Values.metrics.ingress.enabled }}
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ template "zookeeper.fullname" . }}-metrics
+  {{- if or .Values.metrics.ingress.annotations .Values.commonAnnotations }}
+  annotations:
+    {{- if .Values.metrics.ingress.annotations }}
+    {{ include "zookeeper.tplValue" ( dict "value" .Values.metrics.ingress.annotations "context" $) | nindent 4 }}
+    {{- end }}
+    {{- if .Values.commonAnnotations }}
+    {{- include "zookeeper.tplValue" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- end }}
+spec:
+  rules:
+  - host: {{ .Values.metrics.ingress.host }}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ template "zookeeper.fullname" . }}-metrics
+            port:
+              number: {{ .Values.metrics.service.port }}
+{{- end }}

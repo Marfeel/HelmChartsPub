@@ -380,6 +380,12 @@ metrics:
       prometheus.io/port: "{{ .Values.metrics.service.port }}"
       prometheus.io/path: "/metrics"
 
+  ingress:
+    enabled: false
+    ## Host to use in metrics ingress
+    ## ref: https://kubernetes.io/docs/concepts/services-networking/ingress/
+    # host:
+
   ## Prometheus Operator ServiceMonitor configuration
   ##
   serviceMonitor:

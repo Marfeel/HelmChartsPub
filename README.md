@@ -57,6 +57,6 @@ These steps from 3-6 are the same ones that can be used to update a chart!
 
 ## How to helm add this repo
 
-`helm repo add marfeelpub 'https://raw.githubusercontent.com/marfeel/HelmChartsPub/master/repo/'`
+`helm repo add marfeelpub 'https://raw.githubusercontent.com/Marfeel/HelmChartsPub/master/repo/'`
 
 ## TODO
