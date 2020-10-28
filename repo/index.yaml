@@ -5,7 +5,30 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:29:35.482362592+01:00"
+    created: "2020-10-28T12:35:12.941562507+01:00"
+    description: A centralized service for maintaining configuration information,
+      naming, providing distributed synchronization, and providing group services
+      for distributed applications.
+    digest: 72cdaa8088e23074189fb630a43d094870af0b4feceb9f0005177bfe1f6ce362
+    home: https://github.com/bitnami/charts/tree/master/bitnami/zookeeper
+    icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-110x117.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/bitnami-docker-zookeeper
+    - https://zookeeper.apache.org/
+    urls:
+    - zookeeper-5.27.0.tgz
+    version: 5.27.0
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.6.2
+    created: "2020-10-28T12:35:12.940226291+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -28,7 +51,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:29:35.480826681+01:00"
+    created: "2020-10-28T12:35:12.93885231+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -51,7 +74,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:29:35.479305872+01:00"
+    created: "2020-10-28T12:35:12.936924643+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -74,7 +97,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:29:35.477032178+01:00"
+    created: "2020-10-28T12:35:12.935442671+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -93,4 +116,4 @@ entries:
     urls:
     - zookeeper-5.23.0.tgz
     version: 5.23.0
-generated: "2020-10-28T12:29:35.475385051+01:00"
+generated: "2020-10-28T12:35:12.933867489+01:00"

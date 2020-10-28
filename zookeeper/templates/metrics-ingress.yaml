@@ -18,11 +18,8 @@ spec:
   - host: {{ .Values.metrics.ingress.host }}
     http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: {{ template "zookeeper.fullname" . }}-metrics
-            port:
-              number: {{ .Values.metrics.service.port }}
+      - backend:
+        path: /
+          serviceName: {{ template "zookeeper.fullname" . }}-metrics
+          servicePort: {{ .Values.metrics.service.port }}
 {{- end }}
