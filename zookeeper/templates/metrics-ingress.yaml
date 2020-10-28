@@ -22,4 +22,9 @@ spec:
         backend:
           serviceName: {{ template "zookeeper.fullname" . }}-metrics
           servicePort: {{ .Values.metrics.service.port }}
+  tls:
+  - hosts:
+    - {{ .Values.metrics.ingress.host }}
+
+
 {{- end }}
