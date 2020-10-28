@@ -25,6 +25,5 @@ spec:
   tls:
   - hosts:
     - {{ .Values.metrics.ingress.host }}
-
-
+    secretName: {{ template "zookeeper.fullname" . }}-tls
 {{- end }}
