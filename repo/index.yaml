@@ -5,7 +5,30 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:06:19.041732076+01:00"
+    created: "2020-10-28T12:29:35.482362592+01:00"
+    description: A centralized service for maintaining configuration information,
+      naming, providing distributed synchronization, and providing group services
+      for distributed applications.
+    digest: 3225576ef51a97c2461577127223bdc2d23bcde5fda882bf395cc7583490a34a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/zookeeper
+    icon: https://bitnami.com/assets/stacks/zookeeper/img/zookeeper-stack-110x117.png
+    keywords:
+    - zookeeper
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: zookeeper
+    sources:
+    - https://github.com/bitnami/bitnami-docker-zookeeper
+    - https://zookeeper.apache.org/
+    urls:
+    - zookeeper-5.26.0.tgz
+    version: 5.26.0
+  - annotations:
+      category: Infrastructure
+    apiVersion: v1
+    appVersion: 3.6.2
+    created: "2020-10-28T12:29:35.480826681+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -28,7 +51,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:06:19.040132522+01:00"
+    created: "2020-10-28T12:29:35.479305872+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -51,7 +74,7 @@ entries:
       category: Infrastructure
     apiVersion: v1
     appVersion: 3.6.2
-    created: "2020-10-28T12:06:19.038247048+01:00"
+    created: "2020-10-28T12:29:35.477032178+01:00"
     description: A centralized service for maintaining configuration information,
       naming, providing distributed synchronization, and providing group services
       for distributed applications.
@@ -70,4 +93,4 @@ entries:
     urls:
     - zookeeper-5.23.0.tgz
     version: 5.23.0
-generated: "2020-10-28T12:06:19.036680922+01:00"
+generated: "2020-10-28T12:29:35.475385051+01:00"

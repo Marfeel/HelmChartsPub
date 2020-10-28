@@ -1,12 +1,12 @@
 {{- if .Values.metrics.ingress.enabled }}
-apiVersion: networking.k8s.io/v1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ template "zookeeper.fullname" . }}-metrics
   namespace: {{ template "zookeeper.namespace" . }}
   {{- if or .Values.metrics.ingress.annotations .Values.commonAnnotations }}
   annotations:
-    {{- if .Values.metrics.ingress.annotations }}
+    {{- if .Values.metrics.ingress.annotations -}}
     {{ include "zookeeper.tplValue" ( dict "value" .Values.metrics.ingress.annotations "context" $) | nindent 4 }}
     {{- end }}
     {{- if .Values.commonAnnotations }}
