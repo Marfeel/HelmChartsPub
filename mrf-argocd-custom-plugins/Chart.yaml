@@ -1,0 +1,11 @@
+apiVersion: v2
+name: mrf-argocd-custom-plugins
+description: Marfeel ArgoCD Plugins Chart for mServices
+home: "https://github.com/Marfeel/HelmCharts/mrf-argocd-custom-plugins"
+type: application
+version: 0.0.1
+
+# This is supposed to be the version number of the application being deployed.
+# Since we use this as a base chart, we'll keep the appVersion in sync with the
+# chart version
+appVersion: 0.0.1

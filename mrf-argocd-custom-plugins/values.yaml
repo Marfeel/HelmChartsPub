@@ -1,0 +1,2 @@
+# The base HostName for generate service URLS
+clusterBaseHostName: cluster.test

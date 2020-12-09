@@ -1,0 +1,21 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: plugin-recursivehelmsopsforpreview
+  namespace: argocd
+data:
+  recursivehelmsopsforpreview: |
+    #!/bin/bash
+
+    for project in $(find . -maxdepth 1 -mindepth 1 -type d -not -path ./.git); do
+
+        export cmd="helm-sops template --set clusterBaseHostName={{ .Values.clusterBaseHostName }} -n ${project#./} --no-hooks --debug mapps ./$project/default"
+
+        for file in $(ls -1 $project/default/*.yaml); do
+            cmd+=" -f $file"
+        done
+
+        ${cmd}
+
+    done
